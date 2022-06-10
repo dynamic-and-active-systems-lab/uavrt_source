@@ -4,10 +4,10 @@
 
 #### 1. Build telemetry system on supervisor node
 
-- [x] Receives telemetry data from Pixhawk at 2Hz
-- [x] Publishes /vehiclePose topic to ros2 network as geometry_msg/PoseStamped message type
+- [ ] Receives telemetry data from Pixhawk at 2Hz
+- [ ] Publishes geometry_msgs/PoseStamped messages to /attennaPose topic
 - [ ] Records received telemetry to file
-- [x] Provides /getPoseStamped service that provides the pose of the vehicle at the time sent as part of the request
+- [ ] Publishes diagnostic_msgs/DiagnosticArray messages to /heartbeatStatus topic
 
 Expected time to implement: 2 weeks
 
