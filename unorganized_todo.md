@@ -13,7 +13,7 @@
 - TODO: Weird bug with telemetry messages being printed twice when serial is connected.
 - TODO: Implement Slerp for quaternion.
 - TODO: Check if Px4 Gazebo docker file is needs Don's bug fix.
-- TODO: Edit Cmake file for uavrt_interfaces to match uavrt_ml_enc_dec. 
+- TODO: Edit Cmake file for uavrt_interfaces to match uavrt_utilities. 
 - TODO: Update installation instrunctions in uavrt_source.
 - TODO: Edit Basic operation, Documentation, System requirements, and Installaton sections of different packages. 
 - TODO: Make a Gitbooks or Read The Docs website to point to. Use READMEs in the meantime. 
