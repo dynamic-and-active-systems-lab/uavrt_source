@@ -115,3 +115,17 @@ TBD. I'd like to get more done with Phase 1 before laying out the tasks for Phas
   - Biggest concern: We could never have a distributed system unless we have an established network. How else would you start a remote subprocess? 
  - Meeting with Don? 
  - Paul: Can we meet for 5 minutes after today's meeting? 
+
+### June 10th 2022 
+
+- Mike and I had a meeting with Don on June 7th 2022. Here are the key points:  
+  - We are switching from Pymavlink to MAVSDK C++
+    - Pymavlink should've been able to support DEBUG_FLOAT_ARRAY messages but it wasn't working out   
+    - MAZSDK Python doesn't support DEBUG_FLOAT_ARRAY messages 
+  - Don gave us a walkthrough of his [MavlinkTagSimulator code](https://github.com/DonLakeFlyer/MavlinkTagSimulator/blob/master/TagSimulator.cpp)
+  - Don had mentioned using a sliding window in the detector objects
+- Mike and I agreed on moving the packages into separate repos
+  -  [uavrt_source](https://github.com/dynamic-and-active-systems-lab/uavrt_source), 
+  -  [uavrt_supervisor](https://github.com/dynamic-and-active-systems-lab/uavrt_supervisor), 
+  -  [uavrt_mavlink_encoder_decoder](https://github.com/dynamic-and-active-systems-lab/uavrt_mavlink_encoder_decoder), 
+  -  [uavrt_interfaces](https://github.com/dynamic-and-active-systems-lab/uavrt_interfaces)
