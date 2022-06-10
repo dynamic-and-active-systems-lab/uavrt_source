@@ -12,11 +12,7 @@ Hopefully we can use a launch file.
 
 # Documentation
 
-The supporting documentation for this project can be found in the following directory:
-
-TBD
-
-As well as on the following site:
+The supporting documentation for this project can be found on the following site:
 
 TBD
 
