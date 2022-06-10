@@ -16,7 +16,7 @@
 - TODO: Edit Cmake file for uavrt_interfaces to match uavrt_ml_enc_dec. 
 - TODO: Update installation instrunctions in uavrt_source.
 - TODO: Edit Basic operation, Documentation, System requirements, and Installaton sections of different packages. 
-- TODO: Make a Gitbooks website to point to. Use READMEs in the meantime. 
+- TODO: Make a Gitbooks or Read The Docs website to point to. Use READMEs in the meantime. 
 - TODO: Update READMEs in empty ROS 2 directories. 
 - TODO: Figure out how we want to build airspy_channelizer within UAV-RT source. 
 - TODO: Should we place the prebuilt C++ library .deb files inside a lib directory for easy installation? 
