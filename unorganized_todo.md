@@ -1,4 +1,5 @@
-
+### These TODOs don't following a particular order. 
+### These TODOs don't include the major/obivious TODOs as those are covered in summer_2022_task_list
 
 - TODO: Create launch logging configuration file. UNIQUE_LOG_BASE_PATH = '~/uavrt_ws/src/supervisor/log'
 - TODO: Need to add unit testing eventually.
@@ -16,3 +17,4 @@
 - TODO: Update installation instrunctions in uavrt_source.
 - TODO: Edit Basic operation, Documentation, System requirements, and Installaton sections of different packages. 
 - TODO: Make a Gitbooks website to point to. Use READMEs in the meantime. 
+- TODO: 
