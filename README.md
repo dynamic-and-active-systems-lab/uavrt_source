@@ -1,16 +1,8 @@
-# uavrt_source
+# UAV-RT Source directory
 
-This repository acts as the source in which all uavrt_packages can be cloned into to be built using the version of [colcon](https://colcon.readthedocs.io/en/released/) packaged with [ROS 2 galactic](https://docs.ros.org/en/galactic/index.html).
+This repository acts as the source in which all UAV-RT repositories/packages can be cloned into to be built using the version of [colcon](https://colcon.readthedocs.io/en/released/) packaged with [ROS 2 galactic](https://docs.ros.org/en/galactic/index.html).
 
 The development of this code was funded via National Science Foundation grant no. 2104570.
-
-# Features
-
-- Establishes and monitors a serial or UDP connection with the PX4 Autopilot or Gazebo SITL, respectively
-- Recieves and publishes telemetry data from the Pixhawk 4 at a rate of 2Hz
-  - Able to write this telemetry data to a .txt file for post-processing
-- Provides a service request for determining the position of the UAV in space given a timestamp
-- TBD
 
 # Basic operation
 
