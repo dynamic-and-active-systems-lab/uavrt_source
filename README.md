@@ -29,7 +29,7 @@ TBD
 ### Hardware
 
 - [PX4 autopilot](https://docs.px4.io/master/en/flight_controller/pixhawk4.html)
-- Airspy HF+ Discovery
+- [Airspy HF+ Discovery](https://airspy.com/airspy-hf-discovery/)
 - Computer computer
   - This project was developed and deployed on the [UDOO x86 II Ultra](https://shop.udoo.org/en/udoo-x86-ii-ultra.html)
 
@@ -149,10 +149,12 @@ TBD. The instructions I wrote for this are in the [airspy_channelizer repo](http
 
 This codebase supports the Foxy Fitzroy and Galactic Geochelone distributions of ROS 2:
 
+- NOTE: Do we support Foxy or should we only support Galactic? MATLAB will eventually be to Galactic so I would rather focus soley on that. 
+
 - [ROS 2 Foxy Fitzroy](https://docs.ros.org/en/foxy/Releases/Release-Foxy-Fitzroy.html)
 - [ROS 2 Galactic Geochelone](https://docs.ros.org/en/galactic/Releases/Release-Galactic-Geochelone.html)
 
-#### MAVLink and Pymavlink
+#### MAVLink and MAVSDK C++
 
 This codebase supports [MAVLink V2](https://mavlink.io/en/guide/mavlink_2.html).
 
@@ -183,14 +185,16 @@ I need to 100% confirm that the final version of the codebase can run on Foxy. E
 
 Within a terminal window, run the following commands:
 
+NOTE: Do NOT use! These instrunctions need to be updated! I will update them after I complete the beta version of UAV-RT. 
+
 ```
 source /opt/ros/galactic/setup.bash
 # 'source ~/ros2_galactic/ros2-linux/setup.bash' run this command if the one above doesn't work
-mkdir -p ~/uavrt_ws/
-cd ~/uavrt_ws/
-# Authentication is required for the following command
+mkdir -p ~/uavrt_workspace/
+cd ~/uavrt_workspace/
+# Authentication is currently required for the following command
 # Must be a member of the Dynamic and Active Systems Lab organization on Github
-git clone https://github.com/dynamic-and-active-systems-lab/uavrt_supervise/
+git clone https://github.com/dynamic-and-active-systems-lab/uavrt_source/
 rosdep install -i --from-path uavrt_supervise --rosdistro galactic -y
 # Should return "All required rosdeps installed successfully"
 colcon build
