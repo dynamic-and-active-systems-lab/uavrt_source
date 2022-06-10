@@ -128,5 +128,5 @@ TBD. I'd like to get more done with Phase 1 before laying out the tasks for Phas
   - These repos are not completely filled but the structure is there
   - [uavrt_source](https://github.com/dynamic-and-active-systems-lab/uavrt_source), 
   - [uavrt_supervisor](https://github.com/dynamic-and-active-systems-lab/uavrt_supervisor), 
-  - [uavrt_mavlink_encoder_decoder](https://github.com/dynamic-and-active-systems-lab/uavrt_mavlink_encoder_decoder), 
+  - [uavrt_mavlink_utilities](https://github.com/dynamic-and-active-systems-lab/uavrt_mavlink_utilities), 
   - [uavrt_interfaces](https://github.com/dynamic-and-active-systems-lab/uavrt_interfaces)
