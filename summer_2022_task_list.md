@@ -125,7 +125,8 @@ TBD. I'd like to get more done with Phase 1 before laying out the tasks for Phas
   - Don gave us a walkthrough of his [MavlinkTagSimulator code](https://github.com/DonLakeFlyer/MavlinkTagSimulator/blob/master/TagSimulator.cpp)
   - Don had mentioned using a sliding window in the detector objects
 - Mike and I agreed on moving the packages into separate repos
-  -  [uavrt_source](https://github.com/dynamic-and-active-systems-lab/uavrt_source), 
-  -  [uavrt_supervisor](https://github.com/dynamic-and-active-systems-lab/uavrt_supervisor), 
-  -  [uavrt_mavlink_encoder_decoder](https://github.com/dynamic-and-active-systems-lab/uavrt_mavlink_encoder_decoder), 
-  -  [uavrt_interfaces](https://github.com/dynamic-and-active-systems-lab/uavrt_interfaces)
+  - These repos are not completely filled but the structure is there
+  - [uavrt_source](https://github.com/dynamic-and-active-systems-lab/uavrt_source), 
+  - [uavrt_supervisor](https://github.com/dynamic-and-active-systems-lab/uavrt_supervisor), 
+  - [uavrt_mavlink_encoder_decoder](https://github.com/dynamic-and-active-systems-lab/uavrt_mavlink_encoder_decoder), 
+  - [uavrt_interfaces](https://github.com/dynamic-and-active-systems-lab/uavrt_interfaces)
