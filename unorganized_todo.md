@@ -17,4 +17,4 @@
 - TODO: Update installation instrunctions in uavrt_source.
 - TODO: Edit Basic operation, Documentation, System requirements, and Installaton sections of different packages. 
 - TODO: Make a Gitbooks website to point to. Use READMEs in the meantime. 
-- TODO: 
+- TODO: Update READMEs in empty ROS 2 directories. 
