@@ -13,6 +13,8 @@ will be located here as a reference.
 - Linux - REHL (which version? 8? amd64 and arm64?)
 - macOS - Mojave (10.14)
 
+Note: Ubuntu 20.04 arm64 should work as well but it has not been tested. 
+
 ### Dependencies
 
 Installation instructions will be supplied for macOS Mojave (10.14).
