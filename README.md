@@ -173,11 +173,10 @@ For installing this package, it is required that you have a functional ROS 2 wor
 
 Within a terminal window, run the following commands:
 
-NOTE: Do NOT use! These instrunctions need to be updated! I will update them after I complete the beta version of UAV-RT. 
+[//]: # ('source ~/ros2_galactic/ros2-linux/setup.bash' run this command if the one above doesn't work)  
 
 ```
 source /opt/ros/galactic/setup.bash
-[//]: # ('source ~/ros2_galactic/ros2-linux/setup.bash' run this command if the one above doesn't work)  
 mkdir -p ~/uavrt_workspace/
 cd ~/uavrt_workspace/
 # Authentication is currently required for the following command
