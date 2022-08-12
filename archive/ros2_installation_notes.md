@@ -71,7 +71,7 @@ gcc --version
 
 #### Netcat
 
-macOS
+- macOS
 
 ```
 brew update
