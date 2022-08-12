@@ -120,7 +120,7 @@ MATLAB 2022a+ is recommended but it is not required:
 
 - [MATLAB R2022a](https://www.mathworks.com/support/requirements/matlab-system-requirements.html)
 
-# nstallaton
+# Installaton
 
 For installing this package, it is required that you have a functional ROS 2 workspace. Below is a set of instructions to create a ROS2 workspace. These instructions will fail unless the previous dependencies have been met.
 
@@ -138,26 +138,63 @@ Within a terminal window, run the following commands:
 source /opt/ros/galactic/setup.bash
 mkdir -p ~/uavrt_workspace/
 cd ~/uavrt_workspace/
-# Authentication is currently required for the following command
-# Must be a member of the Dynamic and Active Systems Lab organization on Github
+```
+
+You be a member of the Dynamic and Active Systems Lab organization on Github. Authentication is currently required for the following command: 
+
+```
 git clone https://github.com/dynamic-and-active-systems-lab/uavrt_source/
+```
+
+"All required rosdeps installed successfully" should be returned after the following command: 
+
+```
 rosdep install -i --from-path uavrt_source --rosdistro galactic -y
-# Should return "All required rosdeps installed successfully"
+```
+
+There should be "build  install  log  uavrt_source" directories in the workspace root (~/uavrt_workspace) after ther following command: 
+
+```
 colcon build
-# "build  install  log  uavrt_source" directories should exist in the workspace root (~/uavrt_workspace)
 source /opt/ros/galactic/setup.bash
 . install/local_setup.bash
 ```
 
 If these commands didn't fail, then your installation of uavrt_source should be complete. 
 
-You will need to populate uavrt_source with the different 
-uavrt_packages in order to begin using the system. The instructions for installing these individual packages are found in the installation section of 
-each package's README. 
+## Installating uavrt_packages
 
-Once all of the necessary uavrt_packages have been cloned to uavrt_source, you will need to run the following commands again: 
+You will need to populate uavrt_source with the differentuavrt_packages in order to begin using the system. The instructions for installing these individual packages are found in the installation section of each package's README. 
 
+Once all of the necessary uavrt_packages have been cloned to uavrt_source, you will need to run the following commands again within a terminal window: 
 
+```
+cd ~/uavrt_workspace/
+source /opt/ros/galactic/setup.bash
+```
+
+"All required rosdeps installed successfully" should be returned after the following command: 
+
+```
+rosdep install -i --from-path uavrt_source --rosdistro galactic -y
+```
+
+After this next command, you will see something akin to... 
+Starting >>> uavrt_PACKAGE
+Finished <<< uavrt_PACKAGE [Time(s)]
+Summary: 1 package finished [Time(s)]
+
+```
+colcon build
+source /opt/ros/galactic/setup.bash
+. install/local_setup.bash
+```
+
+If these commands didn't fail, then your installation of the UAV-RT codebase should be complete. 
+
+# Troubleshooting
+
+Troubleshooting tips can be found here. (TBD)
 
 # License
 
