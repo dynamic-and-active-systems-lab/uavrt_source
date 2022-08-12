@@ -90,4 +90,4 @@ Assuming MAVSDK C++ and ROS 2 Galactic were installed:
 
 #### macOS
 
-TBD. Instructions are listed in the ROS 2 documentation but I have not gone through them. I'm leaving this section blank until I go through this installation process on a Mac running Mohave 10.4.
+TBD. Instructions are listed in the ROS 2 documentation but I have not gone through them. I am unsure of the nightmares that lay in wait. 
