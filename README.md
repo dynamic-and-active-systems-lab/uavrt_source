@@ -29,7 +29,7 @@ TBD
 
 ### Dependencies
 
-Installation instructions will be supplied for Ubuntu 20.04. The standard Debian/Ubuntu package manager `apt` will be used for installation purposes on Linux.
+Installation instructions will be supplied for Ubuntu 20.04. The standard Debian/Ubuntu package manager `apt` will be used for installation purposes.
 
 **Note:** Check whether these dependencies are installed prior to running the installation commands below!
 
