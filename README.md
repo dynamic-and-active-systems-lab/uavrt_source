@@ -90,7 +90,7 @@ dpkg -L netcat
 
 #### airspyhf_rx
 
-TBD. The instructions I wrote for this are in the [airspy_channelizer repo](https://github.com/dynamic-and-active-systems-lab/airspyhf_channelize#installing-airspyhf_rx). Do I point to that, copy or move them over here? I'd like to put them all in one place so I could edit them. Ultimately, the instructions for everything should be on the DASL site.
+TBD. The instructions I wrote for this are in the [airspy_channelizer repo](https://github.com/dynamic-and-active-systems-lab/airspyhf_channelize#installing-airspyhf_rx). Ultimately, the dependencies for the UAV-RT need to be on a centralized site. 
 
 #### ROS 2
 
