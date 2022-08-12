@@ -24,7 +24,7 @@ TBD
 
 - [PX4 autopilot](https://docs.px4.io/master/en/flight_controller/pixhawk4.html)
 - [Airspy HF+ Discovery](https://airspy.com/airspy-hf-discovery/)
-- Computer computer
+- Companion computer
   - This project was developed and deployed on the [UDOO x86 II Ultra](https://shop.udoo.org/en/udoo-x86-ii-ultra.html)
 
 ### Dependencies
