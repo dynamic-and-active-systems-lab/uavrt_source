@@ -18,9 +18,7 @@ TBD
 
 ### Platforms
 
-- Windows is not supported at this time.
-- Linux - Ubuntu 20.04 (amd64 and arm64?)
-- macOS - Mojave (10.14)
+- Linux - Ubuntu 20.04 (amd64)
 
 ### Hardware
 
@@ -34,7 +32,6 @@ TBD
 Installation instructions will be supplied for Ubuntu 20.04 and macOS.
 
 - The standard Debian/Ubuntu package manager `apt` will be used for installation purposes on Linux
-- [Homebrew](https://brew.sh/) will be used for installation purposes on macOS
 
 **Note:** Check whether these dependencies are installed prior to running the installation commands below!
 
@@ -143,11 +140,8 @@ TBD. The instructions I wrote for this are in the [airspy_channelizer repo](http
 
 #### ROS 2
 
-This codebase supports the Foxy Fitzroy and Galactic Geochelone distributions of ROS 2:
+The UAV-RT codebase supports the Galactic Geochelone distributions of ROS 2:
 
-- NOTE: Do we support Foxy or should we only support Galactic? MATLAB will eventually be to Galactic so I would rather focus soley on that. 
-
-- [ROS 2 Foxy Fitzroy](https://docs.ros.org/en/foxy/Releases/Release-Foxy-Fitzroy.html)
 - [ROS 2 Galactic Geochelone](https://docs.ros.org/en/galactic/Releases/Release-Galactic-Geochelone.html)
 
 #### MAVLink and MAVSDK C++
@@ -169,13 +163,11 @@ MATLAB 2022a+ is recommended but it is not required:
 For installing this package, it is required that you have a functional ROS 2 workspace. Below is a set of instructions to create a ROS2 workspace. These instructions will fail unless the previous dependencies have been met.
 
 - These instructions were adapted from [ROS 2 documentation](https://docs.ros.org/).
-- For more details on creating a workspace using [Foxy](https://docs.ros.org/en/foxy/Tutorials/Workspace/Creating-A-Workspace.html) or [Galactic](https://docs.ros.org/en/galactic/Tutorials.html).
+- For more details on creating a workspace using [Galactic](https://docs.ros.org/en/galactic/Tutorials.html).
 
 ### uavrt_ws
 
-**Note:** I will be supplying the instructions necessary to build a workspace within a ROS 2 Galactic enviroment.
 
-I need to 100% confirm that the final version of the codebase can run on Foxy. Else galactic will be the required ROS 2 version.
 
 #### Linux
 
@@ -185,7 +177,7 @@ NOTE: Do NOT use! These instrunctions need to be updated! I will update them aft
 
 ```
 source /opt/ros/galactic/setup.bash
-# 'source ~/ros2_galactic/ros2-linux/setup.bash' run this command if the one above doesn't work
+[//]: # ('source ~/ros2_galactic/ros2-linux/setup.bash' run this command if the one above doesn't work)  
 mkdir -p ~/uavrt_workspace/
 cd ~/uavrt_workspace/
 # Authentication is currently required for the following command
@@ -205,10 +197,6 @@ If these commands didn't fail, then should you be able to run the `supervisor` p
 ```
 ros2 run supervisor supervisor_node
 ```
-
-#### macOS
-
-TBD. Instructions are listed in the ROS 2 documentation but I have not gone through them. I'm leaving this section blank until I go through this installation process on a Mac running Mohave 10.4.
 
 # License
 
