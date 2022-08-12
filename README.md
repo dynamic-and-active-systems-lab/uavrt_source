@@ -31,7 +31,7 @@ TBD
 
 Installation instructions will be supplied for Ubuntu 20.04 and macOS.
 
-- The standard Debian/Ubuntu package manager `apt` will be used for installation purposes on Linux
+- The standard Debian/Ubuntu package manager `apt` will be used for installation purposes on Linux.
 
 **Note:** Check whether these dependencies are installed prior to running the installation commands below!
 
@@ -47,15 +47,6 @@ sudo apt install python3.9
 python --version
 ```
 
-- macOS
-
-```
-brew update
-brew upgrade
-brew install python@3.8
-python --version
-```
-
 While a Python 3.9 enviroment is required for MATLAB ROS 2 support:
 
 - Ubuntu
@@ -63,14 +54,6 @@ While a Python 3.9 enviroment is required for MATLAB ROS 2 support:
 ```
 sudo apt update && sudo apt upgrade
 sudo apt install python3.9
-python --version
-```
-- macOS
-
-```
-brew update
-brew upgrade
-brew install python@3.9
 python --version
 ```
 
@@ -86,15 +69,6 @@ sudo apt install cmake
 cmake --version
 ```
 
-- macOS
-
-```
-brew update
-brew upgrade
-brew install cmake
-cmake --version
-```
-
 #### C++ Compilers
 
 - Ubuntu — GNU Compiler Collection (GCC) 6.3+
@@ -103,15 +77,6 @@ cmake --version
 sudo apt update && sudo apt upgrade
 sudo apt install build-essential
 sudo apt-get install manpages-dev
-gcc --version
-```
-
-- macOS — Xcode 10+
-
-To install Command Line Utilities only:
-
-```
-xcode-select --install
 gcc --version
 ```
 
@@ -125,15 +90,6 @@ apt-get install netcat
 dpkg -L netcat
 ```
 
-macOS
-
-```
-brew update
-brew upgrade
-brew install netcat
-netcat -h
-```
-
 #### airspyhf_rx
 
 TBD. The instructions I wrote for this are in the [airspy_channelizer repo](https://github.com/dynamic-and-active-systems-lab/airspyhf_channelize#installing-airspyhf_rx). Do I point to that, copy or move them over here? I'd like to put them all in one place so I could edit them. Ultimately, the instructions for everything should be on the DASL site.
@@ -143,6 +99,14 @@ TBD. The instructions I wrote for this are in the [airspy_channelizer repo](http
 The UAV-RT codebase supports the Galactic Geochelone distributions of ROS 2:
 
 - [ROS 2 Galactic Geochelone](https://docs.ros.org/en/galactic/Releases/Release-Galactic-Geochelone.html)
+
+The instructions for installing ROS 2 Galactic Geochelone can be found here: 
+
+- [ROS 2 Galactic Geochelone Installation](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html)
+
+Follow from the beginning of the instrunctions to the end, as it can be difficult to troubleshoot errors later on unless ROS 2 is correctly installed. 
+Run the [Examples](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html#id7) that are listed at the bottom of the installation 
+instructions to ensure that ROS 2 is correctly installed on your machine.  
 
 #### MAVLink and MAVSDK C++
 
@@ -158,22 +122,19 @@ MATLAB 2022a+ is recommended but it is not required:
 
 - [MATLAB R2022a](https://www.mathworks.com/support/requirements/matlab-system-requirements.html)
 
-# Installaton
+# nstallaton
 
 For installing this package, it is required that you have a functional ROS 2 workspace. Below is a set of instructions to create a ROS2 workspace. These instructions will fail unless the previous dependencies have been met.
 
 - These instructions were adapted from [ROS 2 documentation](https://docs.ros.org/).
 - For more details on creating a workspace using [Galactic](https://docs.ros.org/en/galactic/Tutorials.html).
 
-### uavrt_ws
-
-
-
-#### Linux
+### Linux
 
 Within a terminal window, run the following commands:
 
-[//]: # ('source ~/ros2_galactic/ros2-linux/setup.bash' run this command if the one above doesn't work)  
+[//]: # ('source ~/ros2_galactic/ros2-linux/setup.bash' run this command if the first command doesn't work)  
+[//]: # ('source ~/ros2_galactic/ros2-linux/setup.bash' run this command if the last above doesn't work)  
 
 ```
 source /opt/ros/galactic/setup.bash
@@ -182,20 +143,23 @@ cd ~/uavrt_workspace/
 # Authentication is currently required for the following command
 # Must be a member of the Dynamic and Active Systems Lab organization on Github
 git clone https://github.com/dynamic-and-active-systems-lab/uavrt_source/
-rosdep install -i --from-path uavrt_supervise --rosdistro galactic -y
+rosdep install -i --from-path uavrt_source --rosdistro galactic -y
 # Should return "All required rosdeps installed successfully"
 colcon build
-# "build  install  log  uavrt_supervise" directories should exist in the workspace root (~/uavrt_ws)
+# "build  install  log  uavrt_source" directories should exist in the workspace root (~/uavrt_workspace)
 source /opt/ros/galactic/setup.bash
-# 'source ~/ros2_galactic/ros2-linux/setup.bash' run this command if the one above doesn't work
 . install/local_setup.bash
 ```
 
-If these commands didn't fail, then should you be able to run the `supervisor` package with the following command:
+If these commands didn't fail, then your installation of uavrt_source should be complete. 
 
-```
-ros2 run supervisor supervisor_node
-```
+You will need to populate uavrt_source with the different 
+uavrt_packages in order to begin using the system. The instructions for installing these individual packages are found in the installation section of 
+each package's README. 
+
+Once all of the necessary uavrt_packages have been cloned to uavrt_source, you will need to run the following commands again: 
+
+
 
 # License
 
