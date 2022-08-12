@@ -79,3 +79,12 @@ netcat -h
 #### airspyhf_rx
 
 TBD. The instructions I wrote for this are in the [airspy_channelizer repo](https://github.com/dynamic-and-active-systems-lab/airspyhf_channelize#installing-airspyhf_rx). 
+
+
+# Installaton 
+
+Assuming MAVSDK C++ and ROS 2 Galactic were installed: 
+
+#### macOS
+
+TBD. Instructions are listed in the ROS 2 documentation but I have not gone through them. I'm leaving this section blank until I go through this installation process on a Mac running Mohave 10.4.
