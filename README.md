@@ -16,7 +16,7 @@ TBD
 
 # System requirements
 
-### Platforms
+### Supported platforms
 
 - Linux - Ubuntu 20.04 (amd64)
 
