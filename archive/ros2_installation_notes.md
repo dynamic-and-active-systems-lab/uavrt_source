@@ -17,28 +17,31 @@ will be located here as a reference.
 
 Installation instructions will be supplied for macOS Mojave (10.14).
 
-- [Homebrew](https://brew.sh/) will be used for installation purposes on macOS
+- [Homebrew](https://brew.sh/) will be used for installation purposes on macOS.
+
+**Note:** Check whether these dependencies are installed prior to running the installation commands below!
 
 #### Python
 
 Python 3.8 is the minimum requirement:
 
-- Ubuntu
+- macOS
 
 ```
-sudo apt update && sudo apt upgrade
-sudo apt install python3.9
+brew update
+brew upgrade
+brew install python@3.8
 python --version
 ```
 
-
 While a Python 3.9 enviroment is required for MATLAB ROS 2 support:
 
-- Ubuntu
+- macOS
 
 ```
-sudo apt update && sudo apt upgrade
-sudo apt install python3.9
+brew update
+brew upgrade
+brew install python@3.9
 python --version
 ```
 
@@ -46,22 +49,23 @@ python --version
 
 Cmake 3.16.3+:
 
-- Ubuntu
+- macOS
 
 ```
-sudo apt update && sudo apt upgrade
-sudo apt install cmake
+brew update
+brew upgrade
+brew install cmake
 cmake --version
 ```
 
 #### C++ Compilers
 
-- Ubuntu — GNU Compiler Collection (GCC) 6.3+
+- macOS — Xcode 10+
+
+To install Command Line Utilities only:
 
 ```
-sudo apt update && sudo apt upgrade
-sudo apt install build-essential
-sudo apt-get install manpages-dev
+xcode-select --install
 gcc --version
 ```
 
@@ -79,7 +83,6 @@ netcat -h
 #### airspyhf_rx
 
 TBD. The instructions I wrote for this are in the [airspy_channelizer repo](https://github.com/dynamic-and-active-systems-lab/airspyhf_channelize#installing-airspyhf_rx). 
-
 
 # Installaton 
 
