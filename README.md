@@ -164,9 +164,9 @@ If these commands didn't fail, then your installation of uavrt_source should be 
 
 ## Installating uavrt_packages
 
-You will need to populate uavrt_source with the differentuavrt_packages in order to begin using the system. The instructions for installing these individual packages are found in the installation section of each package's README. 
+You will need to populate uavrt_source with the different uavrt_packages in order to begin using the system. The instructions for installing these individual packages are found in the installation section of each package's README. 
 
-Once all of the necessary uavrt_packages have been cloned to uavrt_source, you will need to run the following commands again within a terminal window: 
+Once all of the necessary uavrt_packages have been cloned into uavrt_source, you will need to run the following commands again within a terminal window: 
 
 ```
 cd ~/uavrt_workspace/
