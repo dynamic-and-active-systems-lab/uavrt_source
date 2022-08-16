@@ -88,6 +88,19 @@ apt-get install netcat
 dpkg -L netcat
 ```
 
+#### Boost
+
+This codebase utilizes Boost when necessary. 
+
+The following commands are to install all Boost 1.71.0 libraries: 
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install libboost-all-dev
+```
+Note: Narrow down the exact Boost libraries that are required. 
+
 #### airspyhf_rx
 
 TBD. The instructions I wrote for this are in the [airspy_channelizer repo](https://github.com/dynamic-and-active-systems-lab/airspyhf_channelize#installing-airspyhf_rx). Ultimately, the dependencies for the UAV-RT need to be on a centralized site. 
@@ -140,7 +153,7 @@ mkdir -p ~/uavrt_workspace/
 cd ~/uavrt_workspace/
 ```
 
-You be a member of the Dynamic and Active Systems Lab organization on Github. Authentication is currently required for the following command: 
+You must be a member of the Dynamic and Active Systems Lab organization on Github. Authentication is currently required for the following command: 
 
 ```
 git clone https://github.com/dynamic-and-active-systems-lab/uavrt_source/
@@ -152,7 +165,7 @@ git clone https://github.com/dynamic-and-active-systems-lab/uavrt_source/
 rosdep install -i --from-path uavrt_source --rosdistro galactic -y
 ```
 
-There should be "build  install  log  uavrt_source" directories in the workspace root (~/uavrt_workspace) after ther following command: 
+There should be "build  install  log  uavrt_source" directories in the workspace root (~/uavrt_workspace) after the following command: 
 
 ```
 colcon build
