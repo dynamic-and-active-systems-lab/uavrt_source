@@ -62,6 +62,9 @@ from geometry_msgs.msg import *
 # https://github.com/ros2/common_interfaces/tree/master/diagnostic_msgs
 # http://wiki.ros.org/diagnostics/Tutorials/Creating%20a%20Diagnostic%20Analyzer#Generating_Diagnostics_Input
 from diagnostic_msgs.msg import *
+# Using the custom uavrt message types.
+# https://docs.ros.org/en/humble/Tutorials/Custom-ROS2-Interfaces.html
+from uavrt_interfaces.msg import SubprocessStatus
 
 # Import Parameter class so we can create Paramaters.
 # Not using this functioanlity at the moment since it doesn't seem to add much
