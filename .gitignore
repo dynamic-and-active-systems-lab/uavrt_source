@@ -6,8 +6,15 @@
 /uavrt_supervisor
 /uavrt_connection
 /uavrt_detection
-
 /airspyhf_channelize
+
+# Detector config files
+/generated_tags/config_*
+
+# tmp
+/portairspyhf_channelize
+
+
 
 ### macOS ###
 
