@@ -193,8 +193,11 @@ rosdep install -i --from-path uavrt_source --rosdistro galactic -y
 ```
 
 After this next command, you will see something akin to... 
+
 Starting >>> uavrt_PACKAGE
+
 Finished <<< uavrt_PACKAGE [Time(s)]
+
 Summary: 1 package finished [Time(s)]
 
 ```
