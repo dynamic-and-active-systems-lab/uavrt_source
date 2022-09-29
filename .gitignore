@@ -8,7 +8,7 @@
 /uavrt_detection
 /airspyhf_channelize
 
-# Detector config files
+# Log files
 /generated_tags/config_*
 
 # tmp

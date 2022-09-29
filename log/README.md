@@ -1,1 +1,1 @@
-# log directory
+# uavrt_source/log directory

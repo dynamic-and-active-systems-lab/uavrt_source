@@ -1,0 +1,21 @@
+##################################################
+ID:	01
+channelCenterFreqMHz:	150.328000
+timeStamp:	1646403180.469
+ipData:	0.0.0.0
+portData:	20000
+ipCntrl:	127.0.0.1
+portCntrl:	30000
+Fs:	4000.000
+tagFreqMHz:	150.327
+tp:	0.020000
+tip:	1.88
+tipu:	0.0600
+tipj:	0.02000
+K:	3
+opMode:	freqSearchHardLock
+excldFreqs:	[Inf, -Inf]
+falseAlarmProb:	0.00080
+dataRecordPath:	/Users/mshafer/Desktop/uavrt_output/data_record.bin
+processedOuputPath:	/Users/mshafer/Desktop/uavrt_output
+ros2enable:	true
