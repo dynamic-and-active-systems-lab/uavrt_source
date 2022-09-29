@@ -9,7 +9,7 @@
 /airspyhf_channelize
 
 # Log files
-/generated_tags/config_*
+/log/*
 
 # tmp
 /portairspyhf_channelize
