@@ -169,8 +169,8 @@ Use the following instructions for installing MAVSDK.
 
 ```
 cd ~
-wget https://github.com/mavlink/MAVSDK/releases/download/v1.4.6/libmavsdk-dev_1.4.6_ubuntu20.04_amd64.deb
-sudo dpkg -i libmavsdk-dev_1.4.6_ubuntu20.04_amd64.deb
+wget https://github.com/mavlink/MAVSDK/releases/download/v1.4.2/libmavsdk-dev_1.4.2_ubuntu20.04_amd64.deb
+sudo dpkg -i libmavsdk-dev_1.4.2_ubuntu20.04_amd64.deb
 ```
 
 #### MATLAB
