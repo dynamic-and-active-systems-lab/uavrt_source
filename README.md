@@ -119,6 +119,17 @@ Follow from the beginning of the instrunctions to the end, as it can be difficul
 Run the [Examples](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html#id7) that are listed at the bottom of the installation 
 instructions to ensure that ROS 2 is correctly installed on your machine.  
 
+#### Colcon 
+
+colcon is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools. For more information on the design of colcon see this [document](https://design.ros2.org/articles/build_tool.html).
+
+The source code can be found in the [colcon GitHub organization](https://github.com/colcon).
+
+```
+sudo apt update && sudo apt upgrade
+sudo apt install python3-colcon-common-extensions
+```
+
 #### MAVLink and MAVSDK C++
 
 This codebase supports [MAVLink V2](https://mavlink.io/en/guide/mavlink_2.html).
