@@ -67,6 +67,16 @@ sudo apt install cmake
 cmake --version
 ```
 
+#### Git 
+
+- Ubuntu 
+
+```
+sudo apt update && sudo apt upgrade
+sudo apt install git
+git --version
+```
+
 #### C++ Compilers
 
 - Ubuntu — GNU Compiler Collection (GCC) 6.3+
