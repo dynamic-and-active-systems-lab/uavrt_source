@@ -74,7 +74,7 @@ cmake --version
 ```
 sudo apt update && sudo apt upgrade
 sudo apt install build-essential
-sudo apt-get install manpages-dev
+sudo apt install manpages-dev
 gcc --version
 ```
 
@@ -84,7 +84,7 @@ Ubuntu
 
 ```
 sudo apt update && sudo apt upgrade
-apt-get install netcat
+apt install netcat
 dpkg -L netcat
 ```
 
