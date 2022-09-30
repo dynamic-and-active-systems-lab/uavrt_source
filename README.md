@@ -128,6 +128,12 @@ sudo apt update && sudo apt upgrade
 sudo apt install python3-rosdep2
 ```
 
+You will then need to update rosdep. [From the ROS 2 galactic isntructions](https://docs.ros.org/en/galactic/Installation/Alternatives/Ubuntu-Development-Setup.html#install-dependencies-using-rosdep). 
+
+```
+rosdep update 
+```
+
 #### Colcon 
 
 colcon is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools. For more information on the design of colcon see this [document](https://design.ros2.org/articles/build_tool.html).
