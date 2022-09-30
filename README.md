@@ -163,6 +163,16 @@ We use MAVSDK C++ as the interface to the MAVLink protocol:
 
 - [MAVSDK C++](https://mavsdk.mavlink.io/main/en/cpp/)
 
+Note: The installation version listed on the MAVSDK site is out-of-date! 
+
+Use the following instructions for installing MAVSDK. 
+
+```
+cd ~
+wget https://github.com/mavlink/MAVSDK/releases/download/v1.4.6/libmavsdk-dev_1.4.6_ubuntu20.04_amd64.deb
+sudo dpkg -i libmavsdk-dev_1.4.6_ubuntu20.04_amd64.deb
+```
+
 #### MATLAB
 
 MATLAB 2022a+ is recommended but it is not required:
