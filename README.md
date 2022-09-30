@@ -165,7 +165,7 @@ We use MAVSDK C++ as the interface to the MAVLink protocol:
 
 Note: The installation version listed on the MAVSDK site is out-of-date! 
 
-Use the following instructions for installing MAVSDK. 
+Use the following instructions for installing the version of MAVSDK that was used during development. 
 
 ```
 cd ~
