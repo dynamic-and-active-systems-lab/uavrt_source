@@ -41,7 +41,7 @@ Python 3.8 is the minimum requirement:
 
 ```
 sudo apt update && sudo apt upgrade
-sudo apt install python3.9
+sudo apt install python3.8
 python --version
 ```
 
