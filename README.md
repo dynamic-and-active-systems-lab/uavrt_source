@@ -214,8 +214,8 @@ rosdep install -i --from-path uavrt_source --rosdistro galactic -y
 There should be "build  install  log  uavrt_source" directories in the workspace root (~/uavrt_workspace) after the following command: 
 
 ```
-colcon build
 source /opt/ros/galactic/setup.bash
+colcon build
 . install/local_setup.bash
 ```
 
