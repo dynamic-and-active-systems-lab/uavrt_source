@@ -129,6 +129,8 @@ Follow from the beginning of the instrunctions to the end, as it can be difficul
 Run the [Examples](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html#id7) that are listed at the bottom of the installation 
 instructions to ensure that ROS 2 is correctly installed on your machine.  
 
+*Note:* Use the Ubuntu installation instructions linked above! This will ensure that your ROS 2 overlay can be sourced using `source /opt/ros/galactic/setup.bash`. 
+
 #### Ros2dep
 
 ROS 2 packages are built on frequently updated Ubuntu systems. It is always recommended that you ensure your system is up to date before installing new packages.
