@@ -6,13 +6,12 @@
 /uavrt_supervisor
 /uavrt_connection
 /uavrt_detection
-/airspyhf_channelize
+/portairspy_channelize
+/portairspy_decimate
 
 # Log files
-/log/*
-
-# tmp
-/portairspyhf_channelize
+# No need to upload flight log files.
+/log/flight_log_*
 
 ### macOS ###
 
