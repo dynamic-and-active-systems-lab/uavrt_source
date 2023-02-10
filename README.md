@@ -181,7 +181,7 @@ MATLAB 2022a+ is recommended but it is not required:
 
 - [MATLAB R2022a](https://www.mathworks.com/support/requirements/matlab-system-requirements.html)
 
-# Installaton
+# Installation
 
 For installing this package, it is required that you have a functional ROS 2 workspace. Below is a set of instructions to create a ROS2 workspace. These instructions will fail unless the previous dependencies have been met.
 
