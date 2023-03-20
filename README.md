@@ -111,6 +111,24 @@ sudo apt install libboost-all-dev
 ```
 Note: Narrow down the exact Boost libraries that are required. 
 
+#### Scipy
+
+Tuner.py utilizes scipy. 
+
+Install pip3 if you haven't already: 
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install python3-pip
+```
+
+The following commands will install scipy using pip: 
+
+```
+pip3 install scipy
+```
+
 #### airspyhf_rx
 
 TBD. The instructions I wrote for this are in the [airspy_channelizer repo](https://github.com/dynamic-and-active-systems-lab/airspyhf_channelize#installing-airspyhf_rx). Ultimately, the dependencies for the UAV-RT need to be on a centralized site. 
