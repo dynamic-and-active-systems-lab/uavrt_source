@@ -1,6 +1,6 @@
 # UAV-RT Source directory
 
-This repository acts as the source in which all UAV-RT repositories/packages can be cloned into to be built using the version of [colcon](https://colcon.readthedocs.io/en/released/) packaged with [ROS 2 galactic](https://docs.ros.org/en/galactic/index.html).
+This repository acts as the source in which certain UAV-RT repositories/packages can be cloned into to be built using the version of [colcon](https://colcon.readthedocs.io/en/released/) packaged with [ROS 2 galactic](https://docs.ros.org/en/galactic/index.html).
 
 The development of this code was funded via National Science Foundation grant no. 2104570.
 
