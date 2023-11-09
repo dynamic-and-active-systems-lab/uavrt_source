@@ -5,9 +5,8 @@
 /uavrt_interfaces
 /uavrt_supervisor
 /uavrt_connection
-/uavrt_detection
-/portairspy_channelize
-/portairspy_decimate
+# /uavrt_detection
+# /portairspy_channelize
 
 # Log files
 # No need to upload flight log files.

@@ -67,9 +67,9 @@ sudo apt install cmake
 cmake --version
 ```
 
-#### Git 
+#### Git
 
-- Ubuntu 
+- Ubuntu
 
 ```
 sudo apt update && sudo apt upgrade
@@ -100,22 +100,22 @@ dpkg -L netcat
 
 #### Boost
 
-This codebase utilizes Boost when necessary. 
+This codebase utilizes Boost when necessary.
 
-The following commands are to install all Boost 1.71.0 libraries: 
+The following commands are to install all Boost 1.71.0 libraries:
 
 ```
 sudo apt update
 sudo apt upgrade
 sudo apt install libboost-all-dev
 ```
-Note: Narrow down the exact Boost libraries that are required. 
+Note: Narrow down the exact Boost libraries that are required.
 
 #### Scipy
 
-Tuner.py utilizes scipy. 
+Tuner.py utilizes scipy.
 
-Install pip3 if you haven't already: 
+Install pip3 if you haven't already:
 
 ```
 sudo apt update
@@ -123,7 +123,7 @@ sudo apt upgrade
 sudo apt install python3-pip
 ```
 
-The following commands will install scipy using pip: 
+The following commands will install scipy using pip:
 
 ```
 pip3 install scipy
@@ -131,7 +131,7 @@ pip3 install scipy
 
 #### airspyhf_rx
 
-TBD. The instructions I wrote for this are in the [airspy_channelizer repo](https://github.com/dynamic-and-active-systems-lab/airspyhf_channelize#installing-airspyhf_rx). Ultimately, the dependencies for the UAV-RT need to be on a centralized site. 
+TBD. The instructions I wrote for this are in the [airspy_channelizer repo](https://github.com/dynamic-and-active-systems-lab/airspyhf_channelize#installing-airspyhf_rx). Ultimately, the dependencies for the UAV-RT need to be on a centralized site.
 
 #### ROS 2
 
@@ -139,15 +139,15 @@ The UAV-RT codebase supports the Galactic Geochelone distributions of ROS 2:
 
 - [ROS 2 Galactic Geochelone](https://docs.ros.org/en/galactic/Releases/Release-Galactic-Geochelone.html)
 
-The instructions for installing ROS 2 Galactic Geochelone can be found here: 
+The instructions for installing ROS 2 Galactic Geochelone can be found here:
 
 - [ROS 2 Galactic Geochelone Installation](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html)
 
-Follow from the beginning of the instrunctions to the end, as it can be difficult to troubleshoot errors later on unless ROS 2 is correctly installed. 
-Run the [Examples](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html#id7) that are listed at the bottom of the installation 
+Follow from the beginning of the instrunctions to the end, as it can be difficult to troubleshoot errors later on unless ROS 2 is correctly installed.
+Run the [Examples](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html#id7) that are listed at the bottom of the installation
 instructions to ensure that ROS 2 is correctly installed on your machine.  
 
-*Note:* Use the Ubuntu installation instructions linked above! This will ensure that your ROS 2 overlay can be sourced using `source /opt/ros/galactic/setup.bash`. 
+*Note:* Use the Ubuntu installation instructions linked above! This will ensure that your ROS 2 overlay can be sourced using `source /opt/ros/galactic/setup.bash`.
 
 #### Ros2dep
 
@@ -158,13 +158,13 @@ sudo apt update && sudo apt upgrade
 sudo apt install python3-rosdep2
 ```
 
-You will then need to update rosdep. [From the ROS 2 galactic instructions](https://docs.ros.org/en/galactic/Installation/Alternatives/Ubuntu-Development-Setup.html#install-dependencies-using-rosdep). 
+You will then need to update rosdep. [From the ROS 2 galactic instructions](https://docs.ros.org/en/galactic/Installation/Alternatives/Ubuntu-Development-Setup.html#install-dependencies-using-rosdep).
 
 ```
-rosdep update 
+rosdep update
 ```
 
-#### Colcon 
+#### Colcon
 
 colcon is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools. For more information on the design of colcon see this [document](https://design.ros2.org/articles/build_tool.html).
 
@@ -183,9 +183,9 @@ We use MAVSDK C++ as the interface to the MAVLink protocol:
 
 - [MAVSDK C++](https://mavsdk.mavlink.io/main/en/cpp/)
 
-Note: The installation version listed on the MAVSDK site is out-of-date! 
+Note: The installation version listed on the MAVSDK site is out-of-date!
 
-Use the following instructions for installing the version of MAVSDK that was used during development. 
+Use the following instructions for installing the version of MAVSDK that was used during development.
 
 ```
 cd ~
@@ -219,19 +219,19 @@ mkdir -p ~/uavrt_workspace/
 cd ~/uavrt_workspace/
 ```
 
-You must be a member of the Dynamic and Active Systems Lab organization on Github. Authentication is currently required for the following command: 
+You must be a member of the Dynamic and Active Systems Lab organization on Github. Authentication is currently required for the following command:
 
 ```
 git clone https://github.com/dynamic-and-active-systems-lab/uavrt_source/
 ```
 
-"All required rosdeps installed successfully" should be returned after the following command: 
+"All required rosdeps installed successfully" should be returned after the following command:
 
 ```
 rosdep install -i --from-path uavrt_source --rosdistro galactic -y
 ```
 
-There should be "build  install  log  uavrt_source" directories in the workspace root (~/uavrt_workspace) after the following command: 
+There should be "build  install  log  uavrt_source" directories in the workspace root (~/uavrt_workspace) after the following command:
 
 ```
 source /opt/ros/galactic/setup.bash
@@ -239,26 +239,26 @@ colcon build
 . install/local_setup.bash
 ```
 
-If these commands didn't fail, then your installation of uavrt_source should be complete. 
+If these commands didn't fail, then your installation of uavrt_source should be complete.
 
 ## Installating uavrt_packages
 
-You will need to populate uavrt_source with the different uavrt_packages in order to begin using the system. The instructions for installing these individual packages are found in the installation section of each package's README. 
+You will need to populate uavrt_source with the different uavrt_packages in order to begin using the system. The instructions for installing these individual packages are found in the installation section of each package's README.
 
-Once all of the necessary uavrt_packages have been cloned into uavrt_source, you will need to run the following commands again within a terminal window: 
+Once all of the necessary uavrt_packages have been cloned into uavrt_source, you will need to run the following commands again within a terminal window:
 
 ```
 cd ~/uavrt_workspace/
 source /opt/ros/galactic/setup.bash
 ```
 
-"All required rosdeps installed successfully" should be returned after the following command: 
+"All required rosdeps installed successfully" should be returned after the following command:
 
 ```
 rosdep install -i --from-path uavrt_source --rosdistro galactic -y
 ```
 
-After this next command, you will see something akin to... 
+After this next command, you will see something akin to...
 
 Starting >>> uavrt_PACKAGE
 
@@ -272,11 +272,11 @@ source /opt/ros/galactic/setup.bash
 . install/local_setup.bash
 ```
 
-If these commands didn't fail, then your installation of the UAV-RT codebase should be complete. 
+If these commands didn't fail, then your installation of the UAV-RT codebase should be complete.
 
 # Troubleshooting
 
-Troubleshooting tips can be found here. (TBD)
+If you or your team encounter issues while installing or using the uavrt_source package, please open a new issue within the "Issues" tab of the repository. 
 
 # License
 
